@@ -399,6 +399,7 @@ class StableDiffusionControlNetInpaintPipeline(StableDiffusionControlNetPipeline
             num_images_per_prompt,
             device,
             self.controlnet.dtype,
+            do_classifier_free_guidance = do_classifier_free_guidance,
         )
 
         if do_classifier_free_guidance:
